@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <script src='https://aframe.io/releases/1.5.0/aframe.min.js'></script>
+    <script src="dist/gradio-component.js"></script>
+</head>
+
+<body>
+    <button style="display:block; position: absolute; top:20px; left:20px; z-index:5" onclick="fetchData()">Click
+        Me</button>
+    <a-scene>
+        <a-entity position="0 0 -4" rotation="0 180 0" scale="2 2 2" 3d-generator="prompt: a teddy bear"></a-entity>
+        <a-camera position="0 0 0" cursor="fuse: false; rayOrigin: mouse;" raycaster="objects: .clickable"></a-camera>
+        <a-sky color="#ECECEC"></a-sky>
+ 
+    </a-scene>
+
+</body>
+</html>
